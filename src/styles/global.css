@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+:root {
+  --primary-color: #f21b3f;
+  --secondary-color: #08bdbd;
+  --semi-primary-color: #29bf12;
+  --semi-secondary-color: #abff4f;
+  --orangi-color: #ff9914;
+  --font: "Poppins", sans-serif;
+}
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.formy {
+  width: 100%;
+  max-width: 450px;
+}
+.btn-form {
+  background-color: var(--secondary-color);
+  color: #fff;
+  border: 2px solid var(--secondary-color);
+  transition-property: background-color, color;
+  transition-duration: 0.3s;
+}
+.btn-form:hover {
+  background-color: transparent;
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+.title {
+  color: var(--orangi-color);
+  font-weight: 700;
+}
+.label {
+  color: var(--orangi-color);
+}
+.my-input {
+  width: 100%;
+}
+.my-input:focus {
+  border-color: var(--secondary-color) !important;
+  outline: none;
+}
